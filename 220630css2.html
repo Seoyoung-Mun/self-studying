@@ -2,7 +2,7 @@
     <head>
         <title>css연습</title>
         <style>
-            div{
+            #div1{
                 border: 3px solid red;
                 padding: 10px;
                 margin: 20px;
@@ -12,13 +12,30 @@
                 width: 100px; height: 100px;
                 /*
                 div와 span의 다른점!
-                width와 height는 span에 적용되지 않음*/
+                width와 height는 span에 적용되지 않음
+                span에 width와 height를 지정하려면
+                display 지정해주면 됨*/
+                display: inline-block;
             }
+
+            #div2{
+                width: 100px; height: 100px;
+                padding: 10px;
+                border: 5px solid red;
+                margin: 10px 20px ;
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 30px;
+                padding-left: 40px;
+                /*CSS특성상 겹치는 부분은 마지막에 쓴 부분이 적용된다*/
+            }
+            
         </style>
     </head>
 
     <body>
-        <div>요소의 콘텐츠</div>
+        <div id="div1">요소의 콘텐츠</div>
         <span>check</span>
+        <div id="div2"></div>
     </body>
 </html>
