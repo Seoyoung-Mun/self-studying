@@ -8,12 +8,23 @@
                 border: 5px solid tomato;
                 padding: 30px;
             }
-            
+            #div2{
+                box-sizing: border-box;
+                width: 500px; height: 500px;
+                border: 1px solid red;
+                background-image: url(./tiger.jpeg);
+                background-repeat: no-repeat; /*사진이 반복되어 채워지기X*/
+                background-position: center bottom; /*left top이 기본값*/
+                background-size: contain;
+                /* px 픽셀로 사이즈 조정
+                cover:이미지의 비율이 깨지지않는 선에서 최대사이즈
+                contain:이미지가 찌그러지거나 잘리지 않는 선에서 최대사이즈*/
+            }
         </style>
     </head>
 
     <body>
         <div id="div1"></div>
-        <div id="div2"></div>
+        <div id="div2">호랑이</div>
     </body>
 </html>
