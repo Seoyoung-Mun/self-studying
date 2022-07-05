@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[보충]함수</title>
+</head>
+<body>
+    <div>
+        <p>인자를 세 개 받는 함수를 만들고, a태그를 이용해 '테스트'라는 글자를 눌렀을 때 
+            알림창이 세 개 뜨는 웹문서 소스
+        </p>
+        <br />
+        <script>
+            function test1 (a, b, c){
+                alert(a);
+                alert(b);
+                alert(c);
+            }
+        </script>
+        <a href="javascript:test1('1','2','3');">테스트</a>
+    </div>
+    <br /> <hr>
+    <div>
+        <p>인자를 세개 받는 practice함수를 만들고, test함수에 그 세 인자를 모두 보내 
+            세 인자를 모두 더한 값을 리턴 받아 알림창을 띄우는 웹문서 소스 </p>
+        <p>a태그를 이용해 '연습'이라는 글자를 눌렀을때
+            practice함수를 실행시키기
+        </p>
+        <script>
+            function practice(a, b, c){
+                alert(test(a, b, c));
+            }
+            function test(a, b, c){
+                return (a + b + c);
+            }
+        </script>
+        <a href="javascript:practice(10,11,12);">연습</a>
+    </div>
+    <br /> <hr>
+
+</body>
+</html>
