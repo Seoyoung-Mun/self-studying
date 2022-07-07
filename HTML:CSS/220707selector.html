@@ -2,11 +2,14 @@
     <head>
         <title>특성선택자</title>
         <style>
-            [class$="t"]{
-                color: blue;
+            p > span{
+                color: darkgoldenrod;
             }
-            [id^="uni"]{
-                color: brown;
+            h1 ~ p{
+                color: red;
+            }
+            .text + p{
+                color: olive;
             }
         </style>
     </head>
