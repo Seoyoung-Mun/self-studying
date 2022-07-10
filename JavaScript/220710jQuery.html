@@ -1,15 +1,32 @@
 <html>
     <head>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <style>
+            span{
+                background-color: green;
+            }
+            .b{
+                background-color: red;
+            }
+            p{
+                background-color: yellow;
+            }
+        </style>
         <script>
             function a(){
-                $("span").remove();
+              // $(".b").remove();  지정영역을 제거
+              // $(".b").prepend("Hello");  첫번째 새로운 요소,컨텐츠 추가
+              // $(".b").before("Hello"); 바로 앞에 새로운 요소,컨텐츠 추가
+              //  $(".b").append("Hello"); 마지막 새로운 요소, 컨텐츠 추가
+              // $(".b").after("<p>Hello</p>"); 바로 뒤에 새로운 요소,컨텐츠 추가
+              // $(".b").html("<p> Hello </p>"); span태그였던 b클래스를 p태그로 반환
+              $(".b").text("<p> Hello <p>");
             }
         </script>        
     </head>
 
     <body>
-        <span> 안녕? </span>
+        <span class="b"> 안녕? </span>
 
         <span onClick="a();"> 클릭 </span>
     </body>
