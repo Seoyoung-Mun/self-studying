@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>코드 구조 짜기</title>
+        <style>
+            .container > div{
+                width: 200px; height: 200px;
+                background-color: gray;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script>
+            function add(){
+                $("#"+$("#day").val()+" > div ").append("<br><br>"+$("#content").val());
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type="text" id="day" value="날짜">
+        <br>
+        <input type="text" id="content" value="추가할 내용">
+        <br>
+        <button type="button" onclick="add();">추가하기</button>
+        <br><br>
+        <div class="container">
+            <div id="1">
+                <div>1일</div>
+            </div>
+            <div id="2">
+                <div>2일</div>
+            </div>
+        </div>
+    </body>
+</html>
